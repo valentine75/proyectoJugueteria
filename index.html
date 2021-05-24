@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+<!-- 	<meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<!-- 	ICONOS -->
+	<link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+	<title>Pagina de Compras</title>
+</head>
+<body>
+<!-- 	ELEMENTOS DE HEADER============================================== -->
+	<header>
+		<div class="contenedor-header">
+			<div id="logo-principal">	
+				<i class='bx bxs-yin-yang'></i>
+				<h1>Jugueteria Neko<span>Moon</span> </h1>
+			</div>
+
+			<!--ELEMENTOS DE NAV--------- -->
+			<input type="checkbox"  id="botonMovil">
+
+			<label for="botonMovil" id="labelMovil"> <i class='bx bx-menu'></i> </label>
+
+			<nav id="botoneraMovil">
+				<ul>
+					<li><a href="#nosotros">Nosotros</a></li>
+					<li><a href="#servicios">Servicios</a></li>
+					<li><a href="#contacto">Contacto</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+			<!-- 		EFECTO OLA -->
+		<div style="height: 150px; overflow: hidden;" class="olas-header"><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #bd3d7d;"></path></svg></div>
+		
+	</header>
+	
+<!-- 	ELEMENTOS DE MAIN============================================== -->
+	<main id="nosotros">
+		
+		<!--PRIMER SECTION-------------------------- -->
+		<section class="nosotros">	
+			<ul>	
+				
+				<!--PRIMER LI --------->
+				<li>
+					<div class="logo-nosotros"> 
+						<img src="imagenes/productos.svg" alt="Los mejores productos">
+					</div>
+					<div class="texto-nosotros">
+						<h2>Los mejores productos</h2>
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam aut labore architecto provident similique in. Iusto dolorum atque praesentium optio!
+						</p>
+
+						<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sapiente earum nihil adipisci ipsam voluptates distinctio aut sequi qui veniam deleniti.</p>
+					</div>
+				</li>
+				
+				<!--SEGUNDO LI --------->
+				<li>
+					<div class="logo-nosotros">
+						<img src="imagenes/entregas.svg" alt="Las entregas mas rapidas">
+					</div>
+					<div class="texto-nosotros">
+						<h2>Las entregas mas rapidas</h2>
+						<p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente mollitia nam culpa unde molestias doloribus incidunt ullam rerum fugit totam.
+						</p>
+
+						<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora aspernatur explicabo quas excepturi enim, dolor magnam qui nulla! Deleniti, voluptatibus?</p>
+					</div>
+				</li>
+				
+				<!--TERCER LI --------->
+				<li>
+					<div class="logo-nosotros">
+						<img src="imagenes/calidad.svg" alt="calidad asegurada">
+					</div>
+					<div class="texto-nosotros">
+						<h2>Calidad asegurada</h2>
+						<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas iste, corrupti ipsam consequatur sit ea optio labore quisquam animi vero!</p>
+
+						<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur modi, esse eos sequi veniam ea provident officiis! Officiis, veniam qui.</p>
+					</div>
+				</li>
+			</ul>
+		</section>
+		
+		
+		<!--SEGUNDO SECTION ------------------------>
+		<section class="nosotros-video">	
+			<iframe width="560" height="315" src="https://www.youtube.com/embed/JT0UtZ5-W-A" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+		</section>
+	
+	   <!--TERCER SECTION---------------------- -->	
+		<section id="servicios">	
+			
+			<h3>Nuestros productos</h3>
+			
+			<div class="container-servicios">
+						<!-- PRIMER DIV---- -->
+						<div class="productos figuras">	
+								<h4>Figuras de Coleccion</h4>
+								<span>$600</span>
+								<ul>
+										<li>Lorem, ipsum.</li>
+										<li>Lorem, ipsum.</li>
+										<li>Lorem, ipsum.</li>
+								</ul>
+								<button>Seleccionar</button>
+						</div>
+
+						<!-- SEGUNDO DIV---- -->
+						<div class="productos peluches">	
+								<h4>Peluches</h4>
+								<span>$800</span>
+								<ul>
+										<li>Lorem, ipsum.	</li>
+										<li>Lorem, ipsum.</li>
+										<li>Lorem, ipsum.</li>
+								</ul>
+								<button>Seleccionar</button>
+						</div>
+
+						<!-- TERCER DIV---- -->
+						<div class="productos indumentaria">	
+								<h4>Indumentaria</h4>
+								<span>$900</span>
+								<ul>
+										<li>Lorem, ipsum.	</li>
+										<li>Lorem, ipsum.</li>
+										<li>Lorem, ipsum.</li>
+								</ul>
+								<button>Seleccionar</button>
+						</div>
+				</div>
+		</section>
+	
+		<!--CUARTO SECTION---------------------- -->	
+		<section id="contacto">	
+			<form>
+	
+				<h4>Contacto</h4>
+				
+				<div class="container-contacto">	
+							<!--CAMPO NOMBRE -->
+							<label for="nombre"> Nombre </label>
+								<input type="text" name="nombre" id="nombre" placeholder="Ingrese su nombre" required>
+
+							<!--CAMPO CORREO -->
+							<label for="correo"> Correo </label>
+								<input type="email" name="correo" id="correo" placeholder="Ingrese su correo electronico" required>
+
+							<!--CAMPO TEXTAREA -->
+							<label for="comentarios">Escriba sus dudas o consultas</label>
+							<textarea name="comentarios" id="comentarios"></textarea>
+
+							<!--CAMPO BUTTON -->
+							<button id="boton-envio">Enviar</button>
+				</div>
+			</form>
+		</section>
+	
+	</main>
+	
+	
+<!-- 	ELEMENTOS DE FOOTER=====================================================------>
+	<footer>
+			
+		<div class="olas-footer" style="height: 150px; overflow: hidden;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z" style="stroke: none; fill: #fff;"></path></svg></div>
+		<div class="container-footer">
+				<ul>
+						<li><i class='bx bxl-facebook-circle icon-footer'></i></li>
+						<li><i class='bx bxl-instagram-alt icon-footer'></i></li>
+						<li><i class='bx bxl-whatsapp icon-footer'></i></li>
+				</ul>
+
+				<span>Copyright &copy</span>
+		</div>
+	</footer>
+</body>
+</html>

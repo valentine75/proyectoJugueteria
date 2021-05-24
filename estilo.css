@@ -1,0 +1,752 @@
+@import('https://fonts.googleapis.com/css2? familia=Lexend+Tera&familia=Sevillana&display=swap');
+
+*{
+	padding: 0;
+	margin: 0;
+	list-style:none;
+	box-sizing:border-box;
+}	
+
+body{
+	font-family: 'Lexend Tera', sans-serif;
+} 
+
+/* ELEMENTOS DE HEADER=================================== */
+header{
+	position:relative;
+	top:0;
+}
+
+.contenedor-header{
+	width:100%;
+	min-height:55px;
+	padding:10px;
+	position:fixed;
+	top:0;
+	z-index:3; 
+	background: #bd3d7d; 
+	display:flex;
+	justify-content: space-between;
+	align-items:center;
+}
+
+/* OLAS-HEADER */
+.olas-header{
+	position:fixed;
+	z-index:2;
+	width:100%;
+	top:55px;
+} 
+
+
+#logo-principal{
+	max-width:70%;
+	display:flex;
+	justify-content: space-around;
+}
+
+/* ICONO PRINCIPAL-------- */
+.bxs-yin-yang{
+	font-size: 50px;
+	color: whitesmoke;
+	text-shadow: 1px 3px 4px black;
+}
+
+h1{
+	font-size: 3rem;
+	font-family: 'Sevillana', cursiva;
+	color:whitesmoke;
+	text-shadow: 1px 2px 3px black;
+}
+
+#logo-principal span{
+	font-size: 2.5rem;
+	color: hsla(328, 100%, 54%, 0.74);
+	font-style:italic;
+}
+
+/* ELEMENTOS DE NAV */
+header input, label{
+	display: none;
+}
+
+nav{
+	width:40%;
+}
+
+nav ul{
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+
+a{
+	color:white;
+	font-size: 1.2rem;
+	text-decoration:none;
+}
+
+ a:hover{
+	font-weight:bold;
+	color:#ff7eb3;
+}
+
+
+
+/* ELEMENTOS DE MAIN================================================== */
+main{
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	margin-top: 100px;
+}
+
+
+/* PRIMER SECTION (nosotros)---------- */
+section{
+	width:80%;
+	min-height: 500px;
+	margin: 80px auto;
+}
+
+.nosotros ul{
+	width: 100%;
+	padding: 20px;
+}
+
+
+.nosotros ul li{
+	padding:10px;
+	margin-top: 50px;
+	display:flex;
+	justify-content: space-around;
+}
+
+.nosotros ul li .logo-nosotros{
+	width:45%;
+	font-size: 70px;
+}
+
+/* ICONOS---- */
+.logo-nosotros img{
+	width: 100%;
+}
+
+.nosotros ul li .texto-nosotros{
+	width:50%;
+	padding: 5px;
+}
+
+.texto-nosotros h2, h3, h4{
+	font-family: 'Sevillana', cursiva;
+	font-size: 2.5rem;
+	color:#ff7eb3;
+	text-shadow: 1px 2px 3px gray;
+}
+
+.texto-nosotros p{
+	margin-top: 20px;
+	padding: 10px;
+	text-align: justify;
+	font-size: 18px;
+}
+
+
+/* SEGUNDO SECTION (nosotros-video)---------- */
+.nosotros-video{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+}
+
+iframe{
+	width:100%;
+	max-width:800px;
+    height: 400px;
+}
+
+/*TERCER SECTION (servicios)---------- */
+#servicios{
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+.container-servicios{
+	width:100%;
+    min-height:400px;
+	display:flex;
+	justify-content:space-around;
+	align-items:center;
+}
+
+.container-servicios .productos{
+	width:30%;
+	min-height:370px;
+	border: 1px solid #333;
+	box-shadow: 2px 4px 10px black;
+	border-radius: 10px;
+	text-align:center;
+	line-height:30px;
+}
+
+/* portada de productos */
+.productos h4{
+	width:100%;
+	height:150px;
+	padding:10px;
+	border-radius: 10px 10px 0 0;
+	color: white;
+	text-shadow: 1px 2px 3px gray;
+	font-size:1.3rem;
+}
+
+/* portada de los diferentes productos */
+.figuras h4{
+	background:linear-gradient( 115deg,rgba(146, 58, 158, 0.6),rgba(206, 136, 177, 0.4)) , url(https://th.bing.com/th/id/R9ad0e7ada3fd55cedf5fe75b051ee577?rik=CZhsqz8XnbHULw&pid=ImgRaw);
+	background-size:cover;
+}
+
+.peluches h4{
+	background: linear-gradient( 115deg,rgba(146, 58, 158, 0.6),rgba(206, 136, 177, 0.4)) , url(https://deanime.es/wp-content/uploads/2018/10/Peluches-personajes-anime-y-videojuegos-e1550496260794.jpg);
+	background-size:cover;
+}
+
+.indumentaria h4{
+	background:linear-gradient( 115deg,rgba(146, 58, 158, 0.6),rgba(206, 136, 177, 0.4)) , url(https://benyahyastore.ma/wp-content/uploads/2020/12/1-88.jpg);
+	background-size:cover;
+	background-position:center;
+}
+
+.productos span{
+	color:hsla(328, 100%, 54%, 0.74);
+	text-shadow: 1px 2px 2px gray;
+	font-weight:bold;
+	font-size: 1.5em;
+}
+
+ button{
+	border:none;
+	border-radius: 5px;
+	width:150px;
+	height:30px;
+	background: linear-gradient( 115deg,rgba(158, 58, 136, 0.8),rgba(206, 136, 173, 0.8));
+	margin-top:30px;
+	color: white;
+	text-shadow: 1px 2px 3px black;
+	cursor:pointer;
+
+}
+
+button:hover{
+	background: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+}
+
+/* CUARTO SECTION (contacto)---------- */
+#contacto{
+	padding: 10px;
+    display: flex;
+    justify-content: center;
+ } 
+
+form{
+    width: 100%;
+    max-width: 800px;
+	padding:40px;
+	background-image: linear-gradient(-20deg, #ddd6f3 0%, #faaca8 100%, #faaca8 100%);
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	border-radius:30px;
+	box-shadow: 2px 4px 10px gray;
+	color:white;
+}
+
+
+form h4{
+	color: white;
+} 
+
+.container-contacto{
+	background: rgba(40, 40, 40, 0.4);
+	width:100%;
+    max-width: 700px;
+	padding: 40px;
+	border-radius:30px;
+}
+
+
+.container-contacto label{
+	display:block;
+	margin-top:15px;
+} 
+
+.container-contacto input, textarea, button{
+	width:90%;
+	height: 30px;
+}  
+
+textarea{
+  min-height:130px;
+  resize:vertical;
+}
+
+/* ELEMENTOS DE FOOTER================================================== */
+footer{
+	position:relative;
+	bottom:0;
+	width:100%;
+	height: 170px;
+	background:#bd3d7d;
+}
+
+.olas-footer{
+	position:absolute;
+	width:100%;
+	bottom:12%;
+} 
+
+.container-footer{
+	position:absolute;
+	bottom:0;
+	width:100%;
+	display:flex;
+	flex-direction:column;
+	align-items: flex-end;
+	padding: 10px;
+}
+
+ footer ul{
+	width:30%;
+	display:flex;
+	align-items: flex-end;
+	justify-content: space-between;
+} 
+
+footer .icon-footer{
+	color: whitesmoke;
+	font-size: 40px;
+	cursor: pointer;
+}
+
+footer .icon-footer:hover{
+	font-size: 45px;
+}
+
+footer span{
+	width:20%;
+	padding: 10px;
+} 
+
+
+
+/* COMIENZAN MEDIA QUERIES=================================== */
+@media (max-width:1024px){
+/* ELEMENTOS DE MAIN================================================== */
+	section{
+		width:95%;
+	}
+}
+
+
+ @media (max-width:920px){
+/* ELEMENTOS DE HEADER=================================== */
+    .contenedor-header{
+		flex-direction: column;
+		height: 70px;
+	}
+
+	nav{
+		width:50%;
+		margin-top: 3px;
+	}
+
+	/* OLAS-HEADER */
+	.olas-header{
+		top: 70px;
+	}
+
+/* ELEMENTOS DE MAIN================================================== */
+	section{
+		width:100%;
+	}
+
+	.texto-nosotros h2, h3, h4{
+		font-size: 2.2rem;
+	}
+
+	.texto-nosotros p{
+		font-size: 17px;
+	}
+
+	
+	/* SEGUNDO SECTION (nosotros-video)---------- */
+	iframe{
+		width:90%;
+
+	}
+	
+/* ELEMENTOS DE FOOTER================================================== */
+	.container-footer{
+		align-items: center;
+	}
+}      
+    
+
+  
+  @media (max-width:720px){
+/* ELEMENTOS DE HEADER=================================== */
+	h1{
+		font-size: 2.5em;
+	}
+
+	nav{
+		margin-top: 5px;
+	}
+	
+/* ELEMENTOS DE MAIN================================================== */
+	.nosotros ul li{
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.nosotros ul li .logo-nosotros{
+		width:90%;
+	}
+
+		
+	.nosotros ul li .texto-nosotros{
+		width:95%;
+		padding: 10px;
+		margin-top: 10px;
+	}
+		
+	.texto-nosotros h2, h3, h4{
+		font-size: 2rem;
+	}
+		
+	.texto-nosotros p{
+		font-size: 16px;
+	}
+		
+	/* SEGUNDO SECTION (nosotros-video)---------- */
+	iframe{
+		width:85%;
+	}
+
+
+	/*TERCER SECTION (servicios)---------- */
+	.container-servicios{
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	.container-servicios .productos{
+		width:60%;
+		margin: 30px 0 30px 0px;
+		
+	}
+
+ 	/* TERCER SECTION (contacto)---------- */
+	form{
+		padding: 10px;
+	}
+
+	.container-contacto{
+		padding: 15px;
+	}
+
+	.container-contacto input, textarea, button{
+		width:95%;
+	}
+
+/* ELEMENTOS DE FOOTER================================================== */
+	footer ul{
+		width:60%;
+	} 
+
+	footer .icon-footer{
+		font-size: 35px;
+	}
+	
+	footer .icon-footer:hover{
+		font-size: 40px;
+	}
+	
+	footer span{
+		width:40%;
+		text-align: center;
+	} 
+		
+}
+
+
+  @media (max-width:650px){
+/* ELEMENTOS DE HEADER=================================== */
+	h1{
+		font-size: 2em;
+	}
+
+	.texto-nosotros p{
+		font-size: 14px;
+	}
+
+	nav{
+		width: 60%;
+	}
+		
+	a{
+		font-size: 1.1rem;
+	}
+
+
+/* ELEMENTOS DE MAIN================================================== */
+
+	/*TERCER SECTION (servicios)---------- */
+	.container-servicios .productos{
+		width:70%;
+	}
+
+	/* PRIMER SECTION (servicios)---------- */
+	.container-servicios li{
+		font-size: 14px
+	}
+
+/* ELEMENTOS DE FOOTER================================================== */
+	
+	/* CUARTO SECTION (contacto)---------- */
+	#contacto{
+		padding: 2px;
+ 	} 
+
+	form{
+		padding: 10px;
+	}
+
+  }
+
+
+@media (max-width:560px){
+/* ELEMENTOS DE HEADER=================================== */
+    .contenedor-header{
+		height: 73px;
+	}
+
+	h1{
+		font-size: 1.5em;
+	}
+
+	nav{
+		width: 60%;
+	}
+
+	a{
+		font-size: 1rem;
+	}
+
+/* ELEMENTOS DE FOOTER=================================== */
+	footer .icon-footer{
+		font-size: 30px;
+	}
+	
+	footer .icon-footer:hover{
+		font-size: 35px;
+	}
+	
+
+}
+
+
+@media (max-width:480px){
+/* ELEMENTOS DE HEADER=================================== */
+	.contenedor-header{
+		height: 82px;
+		justify-content: space-between;
+	}
+
+	/* OLAS-HEADER */
+	.olas-header{
+		top: 80px;
+	}
+
+	#logo-principal{
+		max-width: 90%;
+	}
+
+	h1{
+		font-size: 1.8em;
+	}
+
+	.texto-nosotros h2, h3, h4{
+		font-size: 1.6rem;
+	}
+
+	.bxs-yin-yang{
+		font-size: 40px;
+	}
+
+	#logo-principal span{
+		font-size: 1.5rem;
+	}
+
+	/* ELEMENTOS DE NAV */
+	nav#botoneraMovil{
+		position: absolute;
+		width: 60%;
+		top: 55px;
+		left: -280px;
+		transition: left 0.5s ease-in;
+		
+	} 
+
+	/* INICIA LABEL#LABELMOVIL E INPUT#BOTONMOVIL*/
+	#labelMovil .bx-menu{
+		position: absolute;
+		top: 10px;
+		left: 2px;
+		font-size: 40px;
+		color: whitesmoke;
+		cursor: pointer;
+	}
+
+	label{
+		display: block;
+	}
+
+	input#botonMovil:checked ~ nav#botoneraMovil{
+    left: 70px;
+	display: flex;
+	flex-direction: column;
+	}
+
+	a{
+		font-size: 14px;
+	}
+
+/* ELEMENTOS DE MAIN================================================== */
+	.nosotros ul{
+		padding: 0;
+	}
+
+	.nosotros ul li{
+		padding:2px;
+	}
+
+	/* SEGUNDO SECTION (nosotros-video)---------- */
+	iframe{
+		width:95%;
+	}
+
+	/*TERCER SECTION (servicios)---------- */
+	.container-servicios .productos{
+		width:80%;
+	}
+
+	/* CUARTO SECTION (contacto)---------- */
+	#contacto{
+		padding: 0;
+		align-items: center;
+	 }
+
+	form{
+		 padding: 3px;
+		 border-radius: 0;
+		max-height: 450px;
+
+	 }
+
+	.container-contacto{
+		height: 400px;
+	}
+
+/* ELEMENTOS DE FOOTER================================================== */
+	footer ul{
+			width:50%;
+	} 
+
+	footer span{
+		width:50%;
+		text-align: center;
+		font-size: 14px;
+	} 
+
+}
+
+
+@media (max-width:360px){
+/* ELEMENTOS DE HEADER=================================== */
+	.contenedor-header{
+		align-items: flex-end;
+	}
+
+	#logo-principal{
+		max-width: 90%;
+	}
+
+	h1{
+		font-size: 1.7em;
+	}
+
+	.bxs-yin-yang{
+		font-size: 35px;
+	}
+	
+	a{
+		font-size: 12px;
+	}
+
+	/* ELEMENTOS DE NAV */
+	nav#botoneraMovil{
+		top: 65px;
+	} 
+
+}
+
+@media (max-width:280px){
+/* ELEMENTOS DE HEADER=================================== */
+	#logo-principal{
+		max-width: 80%;
+	}
+
+	nav{
+		width:90%;
+	}
+	
+	h1{
+		font-size: 1.5em;
+	}
+	
+	.bxs-yin-yang{
+		font-size: 40px;
+	}
+		
+	a{
+		font-size: 13px;
+	}
+
+	/* ELEMENTOS DE NAV */
+	nav#botoneraMovil{
+		top: 63px;
+		
+	} 
+
+	/* INICIA LABEL#LABELMOVIL E INPUT#BOTONMOVIL*/
+	#labelMovil .bx-menu{
+		font-size: 50px;
+	}
+
+	input#botonMovil:checked ~ nav#botoneraMovil{
+    left: 50px;
+	}
+
+/* ELEMENTOS DE MAIN================================================== */
+
+
+	/* PRIMER SECTION (servicios)---------- */
+	.container-servicios li{
+		font-size: 13px
+	}
+}
